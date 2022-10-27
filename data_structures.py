@@ -26,8 +26,7 @@ class Stack:
         if not self.head:
             raise ValueError("List is empty")
 
-        # FIXME: This is the mistake! It should return the item of the head node!
-        item = self.head.next.item
+        item = self.head.item
 
         self.head = self.head.next
 
